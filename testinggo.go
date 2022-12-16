@@ -4,6 +4,8 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"raylib/raygui"
+	rl "raylib/raylib"
 	"strings"
 )
 
@@ -23,4 +25,20 @@ func main() {
 	fmt.Print("Enter your name: ")
 	name, _ := reader.ReadString('\n')
 	fmt.Print("Your stupid name is " + name)
+
+	rl.InitWindow(800, 600, "My First Window")
+	rl.SetTargetFPS(60)
+
+	for !rl.WindowShouldClose() {
+		rl.BeginDrawing()
+
+		rl.ClearBackground(rl.RayWhite)
+		rl.DrawText("This is a super cool window because it took me forever to fucking get it working.", 190, 200, 24, rl.Lime)
+
+		rl.EndDrawing()
+
+		raygui.ICON_CURSOR_HAND
+	}
+
+	rl.CloseWindow()
 }
