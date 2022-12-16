@@ -4,7 +4,6 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"raylib/raygui"
 	rl "raylib/raylib"
 	"strings"
 )
@@ -36,8 +35,6 @@ func main() {
 		rl.DrawText("This is a super cool window because it took me forever to fucking get it working.", 190, 200, 24, rl.Lime)
 
 		rl.EndDrawing()
-
-		raygui.ICON_CURSOR_HAND
 	}
 
 	rl.CloseWindow()
