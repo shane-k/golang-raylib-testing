@@ -1,10 +1,9 @@
 package main
-
 import (
 	"bufio"
 	"fmt"
 	"os"
-	rl "raylib/raylib"
+	rl "github.com/gen2brain/raylib-go/raylib"
 	"strings"
 )
 
